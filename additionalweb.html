@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="weblogo.png">  <!--Adding the logo to the title-->
+    <title>Additional Webpage</title>                      <!--Adding the text to the title-->
+    <link rel="stylesheet" href="navfooter.css">           <!--Linking style sheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Styling the universal Selector */
+        *{                                                 
+            font-family:'Lexend';
+            box-sizing: border-box;
+        }
+        /* Styling the body */
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: 'Lexend', sans-serif;
+            background-attachment: fixed;
+        }
+        /* Styling the Main Heading */
+        h1 {
+            margin-top: 0px;
+            font-size: 65px;
+            font-weight: 600;
+            margin-left: 15px;
+            margin-right: 15px;
+            color: white;        
+        }
+        /* Styling the heading 2 */
+        h2 {
+            color: white;
+            font-size: 30px;
+            font-weight: 500;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        /* Styling the Heading 3 */
+        h3 {
+            font-weight: 400;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 27px;
+            color: white;
+        }
+        /* Styling class heading3 */
+        .heading3{
+            margin-top: 120px;
+        }
+        /* Styling the paragaraph tag */
+        p{
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 20px;
+            color: white;
+        }
+        /* Styling the container class */
+        .container {
+            overflow: auto; 
+        }
+        /* Styling images */
+        .image {
+            margin-left: 20px;
+            margin-right: 30px ;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        /* Styling images when clicked */
+        .image:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+        /* Styling images when unclicking */
+        .image:not(:hover) {
+            transform: scale(1);
+            transition: 0.4s;
+        }
+        /* Styling class text */
+        .text {
+            float: left;
+            width: 910px;
+            margin-left: 35px;
+            margin-right: 50px;
+            line-height: 1.7;
+            word-break: break-all;
+        }
+        /* Styling ordered list */
+        ol {
+            line-height: 1.6;
+            font-size: 20px;
+            color: white;
+        }
+        /* Styling class anchors */
+        .anchors{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        /* Styling class anchors when clicked */
+        .anchors:hover{
+            color: red;
+            transition: 0.5s;
+        }
+        /* Styling class backtop */
+        .backtop{
+            list-style-type: none;
+            text-decoration: none;
+        }
+        /* Styling html */
+        html{
+            scroll-behavior: smooth;
+        }
+        /* Styling id */
+        #myVideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+            filter: brightness(0.2);
+            position: fixed;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--Adding the Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <a href="Tourism.html" class="logo">VISIT  SRI  LANKA</a>
+            <ul>
+                <li><a class="navlistbtn" href="Tourism.html">Home</a></li>
+                <li><a class="navlistbtn" href="aboutuspage.html">About Us</a></li>
+                <li><a class="navlistbtn" href="quizwebhtml.html">Quiz</a></li>
+                <li><a class="navlistbtn" href="shop.html">Store</a></li>
+                <li><a class="navlistbtn" href="rate-us.html">Comment Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Adding the heading of the page-->
+    <h1 id="maintopic"><br>Here are the 5 most amazing places you need to visit if you are traveling in Sri Lanka.</h1>
+    <h2>Try these!</h2>       <!--adding heading 2-->
+    <!--Adding ordered list to display the anchors with numbers-->
+    <ol>
+        <li><a class="anchors" href="#sigiriya">Sigiriya Rock Fortress.</a></li>
+        <li><a class="anchors" href="#gallefort"> Galle Dutch Fort.</a></li>
+        <li><a class="anchors" href="#ninearchbridge">Nine Arch Bridge.</a></li>
+        <li><a class="anchors" href="#yalapark">Yala National Park.</a></li>
+        <li><a class="anchors" href="#arugambay">Arugam Bay.</a></li>
+    </ol>
+
+
+    <div class="container">           <!--Adding the background video-->
+        <video autoplay muted loop id="myVideo">
+            <source src="videoquiz.mp4" type="video/mp4">
+        </video>
+        <!--Adding the topic of the content-->
+        <h3 id="sigiriya">1. Sigiriya Rock Fortress.</h3>  <!--Adding the same Id which the anchors used above-->
+        <p class="text">Sigiriya or the Lion Rock is a World Heritage and one of the most stunning places to see in Sri Lanka.
+            <br>Sigiriya was built by the fifth-century king Kashyapa I to survive from his brother Molligoda's attacks.
+            During King Kashyapa's reign, Sigiriya was developed into a complex city and fortress.
+            The fortress was the capital of the Sinhalese kingdom until Kashyapa was defeated.
+            <br>Archaeologists of Sigiriya confirmed that there were many defense systems used to keep <br>Sigiriya secured from attacks.
+            Some of those defense systems are Moats with crocodiles and brick walls.
+            <br>Sigiriya is known for its dramatic rock face covered in elaborate paintings, which is one of its most unique characteristics. 
+            The "Sigiriya Frescoes" are ancient paintings of angelic women.
+            <br>These frescoes have managed to maintain their brilliant colors over the years, showing the incredible skill and talent of the ancient craftsmen.
+            <br>The panorama view from the surrounding countryside from the summit of Sigiriya gives <br>visitors an unforgettable experience and because of these things,
+            Sigiriya is a great mark of <br>the Sri Lankan architectural brilliance and it keeps Sri Lanka on top of the list of most <br>beautiful countries to visit.
+        </p>
+        <!--Adding the image with 450 width-->
+        <img class="image" src="SigiriyaRock.jpg" alt="Sigiriya Rock Fortress" title="Sigiriya Rock Fortress" width="450">
+
+        <!--Adding the topic of the content-->
+        <h3 class="heading3" id="gallefort">2. Galle Dutch Fort.</h3>  <!--Adding the same Id which the anchors used above-->
+        <p class="text">Galle fort was built first in 1588 by the Portuguese, then extensively fortified by the Dutch <br>during the 17th century from 1649 onwards. 
+            It is a historical, archaeological, and architectural heritage monument which increases the value of Sri Lankan history.
+            <br>The National Maritime Museum is located at the Galle Dutch Fort, which serves as a showcase for Sri Lanka's nautical heritage and the forts' historical function as a center of trade.
+            <br>The Galle Dutch Fort has, moreover, become a booming center for tourism, <br>culture, and the arts. The fort's streets are decorated with colorful street art, and its <br>courtyards frequently host cultural festivals, live music events, shops, and galleries providing a treasure store of locally produced handicrafts, jewelry, textiles, and modern art.
+            <br>These things make Galle fort a very famous travel destination for both local and foreign <br>travelers.
+        </p>
+        <!--Adding the image with 450 width-->
+        <img class="image" src="galle-fort-image-2.webp" alt="Galle Dutch Fort" title="Galle Dutch Fort" width="450">
+
+        <!--Adding the topic of the content-->
+        <h3 class="heading3" id="ninearchbridge">3. Nine Arch Bridge.</h3>   <!--Adding the same Id which the anchors used above-->
+        <p class="text">The Nine Arches Bridge is a famous landmark located in Ella, Sri Lanka. The bridge was <br>constructed during the British colonial period in Ceylon (present-day Sri Lanka) in the early <br>20th century.
+            It is part of the railway network built by the British to connect the hill country <br>with the coastal areas.
+            <br>The surrounding landscapes and tea plantations create a breathtaking backdrop, <br>making Nine Arch bridge a favorite spot for photography and sightseeing.
+            <br>Nine Arches Bridge is daily visited by hundreds of tourists, and It has become a must-visit <br>destination for tourists because of its unique beauty, historical significance, and impressive <br>architectural design.
+        </p>
+        <!--Adding the image with 450 width-->
+        <img class="image" src="NineArchBridge.jpg" alt="Nine Arch Bridge" title="Nine Arch Bridge" width="450">
+
+        <!--Adding the topic of the content-->
+        <h3 class="heading3" id="yalapark">4. Yala National Park.</h3>       <!--Adding the same Id which the anchors used above-->
+        <p class="text">Yala National Park is a huge area of forest, grassland, and lagoons bordering the Indian <br>Ocean, in southeast Sri Lanka.
+            It's home to wildlife such as leopards, elephants, crocodiles, as well as hundreds of bird species.
+            Yala National Park is the most visited and second-largest <br>national park in Sri Lanka.
+            <br>Another main reason for Yala to be this famous is the safari rides. One of the most <br>sought-after safari experiences worldwide is available at Yala National Park. 
+            Visitors can <br>immerse themselves in Sri Lanka's natural beauty and get up close to the trees, plants, and <br>animals during the safari.
+            <br>So because of these reasons, if you are a tourist, Yala National Park is one of the best places to visit.
+        </p>
+        <!--Adding the image with 450 width-->
+        <img class="image" src="YalaSafari.jpg" alt="Yala National Park" title="Yala National Park"  width="450">
+        <!--Adding the topic of the content-->
+        <h3 class="heading3" id="arugambay">5. Arugam Bay.</h3>             <!--Adding the same Id which the anchors used above-->
+        <p class="text">Arugam Bay is a small coastal town situated on the eastern coast of Sri Lanka, nestled along the pristine shores of the Indian Ocean.
+            Arugam Bay beach is most famous for surfing and it <br>is one of the best beaches in Sri Lanka for all the beach lovers around the world. 
+            <br>Being near the Yala National Park, Arugam Bay is surrounded by loads of wild animals like <br>monkeys, elephants, and crocodiles.
+            <br>There are many unique beach-side hotels and shops around the beach, and you can find some really unique artisan stores selling handmade clothing, cosmetics, and jewelry from there. 
+        </p>
+        <!--Adding the image with 450 width-->
+        <img class="image" src="arugambay.webp" alt="Arugam Bay" title="Arugam Bay" width="450">
+        <p><br></p>
+    </div>
+
+        <ul class="backtop">
+            <li><a class="anchors" href="#maintopic">Back to Top</a></li>
+        </ul>
+    <!--Adding the footer-->
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutuspage.html">About</a></li>
+                        <li><a href="quizwebhtml.html">Quiz</a></li>
+                        <li><a href="shop.html">Store</a></li>
+                        <li><a href="rate-us.html">Comment Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a href="texteditortithira.html">Tithira</a></li>
+                        <li><a href="texteditoreshan.html">Eshan</a></li>
+                        <li><a href="texteditorsadew.html">Sadew</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-content">
+                    <p>Follow us on social media:</p>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

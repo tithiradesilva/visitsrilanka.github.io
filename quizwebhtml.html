@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="weblogo.png"> <!--Adding the logo to the title-->
+    <title>Online Quiz</title>                      <!--Adding the text to the title-->
+    <link rel="stylesheet" href="quizzstyle.css">   <!--Linking style sheets-->
+    <link rel="stylesheet" href="navfooter.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <!--Adding the navigation bar-->
+    <header>
+        <nav class="navbar">
+            <a href="Tourism.html" class="logo">VISIT SRI LANKA</a>
+            <ul>
+                <li><a class="navlistbtn" href="Tourism.html">Home</a></li>
+                <li><a class="navlistbtn" href="aboutuspage.html">About Us</a></li>
+                <li><a class="navlistbtn" href="quizwebhtml.html">Quiz</a></li>
+                <li><a class="navlistbtn" href="shop.html">Store</a></li>
+                <li><a class="navlistbtn" href="rate_us.html">Comment Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <video autoplay muted loop id="myVideo">                <!--Adding a video to background-->
+        <source src="website video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="rules_box">          <!--Creating a div to create the instruction box-->             
+        <div class="box-title"><span>Instructions.</span><span class="timer"></span></div> 
+        <div class="rules-list">  <!--Creating Instructions-->
+            <div class="rule"><b>1. Once you select your answer, it can't be undone.</b></div>
+            <div class="rule"><b>2. Timer will start when you start the quiz.</b></div>
+            <div class="rule"><b>3. You'll get points according to the answers.</b></div>
+            <div class="rule"><b>4. If you couldn't finish the quiz in 1 min, it will auto submit.</b></div>
+        </div>
+        <div class="buttons">      <!--Creating Buttons-->
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    
+    <div class="main">   <!--Creating Quiz-->
+        <h1>Quiz</h1>
+        <div class="quiz">   
+            <h2 id="question">Question</h2>    
+            <div id="answerbuttons">                     <!-- Buttons representing answer options -->
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="nextbutton">Next</button>         <!--Creating Buttons-->
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    
+    <!--Added footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutuspage.html">About</a></li>
+                        <li><a href="quizwebhtml.html">Quiz</a></li>
+                        <li><a href="shop.html">Store</a></li>
+                        <li><a href="rate_us.html">Comment Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a href="texteditortithira.html">Tithira</a></li>
+                        <li><a href="texteditoreshan.html">Eshan</a></li>
+                        <li><a href="texteditorsadew.html">Sadew</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <p>Follow us on social media:</p>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="quizzscript.js"></script>    <!--Connect the script file-->
+</body>
+</html>

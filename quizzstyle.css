@@ -1,0 +1,199 @@
+* {      
+    margin: 0;      
+    padding: 0;     
+    font-family: 'Lexend'; 
+    box-sizing: border-box;  
+    font-weight: 600;  
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.rules_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);   /* Positioning to center */
+    width: 600px;                    
+    background: #fff;              
+    border-radius: 0;                
+    opacity: 1;                      
+}
+
+/* Styling for a video */
+#myVideo {
+    position: absolute;
+    right: 0;                 /* Using this will position the element at the far right of its container..*/
+    bottom: 0;                /* Using to position the element at the bottom of its container.*/
+    min-width: 100%;          /*sets the minimum height of the element to be 100% of its container's width.*/
+    min-height: 100%;         /*sets the minimum width of the element to be 100% of its container's width.*/
+    z-index: -1;              /* Using to order the elements in html code.-1 negative value means all other elements are on that added element.*/
+    filter: brightness(0.6);  
+}
+
+
+/* Styling for the heading in the info box */
+.rules_box .box-title{
+    height: 100px;
+    width: 100%;
+    color: #001e4d;                   
+    display: flex;
+    align-items: center;
+    margin-left: 30px;                 
+    font-size: 30px;                    
+    font-weight: 600;                   
+}
+
+/* Styling for the list of instructions in the info box */
+.rules_box .rules-list{
+    padding: 20px 10px;               
+}
+
+/* Styling for individual instruction items in the info box */
+.rules_box .rules-list .rule{
+    margin-left: 10px;                 
+    margin-bottom: 10px;               
+    font-size: 18px;                   
+    color: red;                      
+    font-weight: 500;                 
+}
+
+/* Styling for the buttons section in the info box */
+.rules_box .buttons{
+    height: 90px;                                 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+/* Styling for the buttons in the info box */
+.rules_box .buttons button{
+    margin: 75px;                      /* Add margin around the buttons */    
+    height: 40px;    
+    width: 150px;                      
+    background: #001e4d;                     
+    color: #fff;                     
+    font-size: 15px;                   
+    font-weight: 500;                  
+    border-radius: 4px;                
+    cursor: pointer;                   
+    border: none;                      /* Remove any border around the buttons */
+    outline: none;                     /* Remove the default focus outline */
+    transition: all 0.3s ease;         /* Add transition effect to smooth changes */
+}
+
+/* Styling for button hover effect */
+.rules_box .buttons button:hover{
+    cursor: pointer;                   
+    background : white;             
+    color: black;                   
+    border: 1px solid #001e4d;       
+    font-size: 18px;                   
+}
+
+/* Styling for the overall app container */
+.main{
+    background: white;               
+    width: 100%;               
+    max-width: 700px;                  
+    margin-top: 100px;                 
+    margin-left: auto;                 
+    margin-right: auto;                
+    margin-bottom: 20px;                             
+    padding: 40px 45px 45px 40px ;     
+}
+
+
+/* Styling for the heading in the app container */
+.main h1{
+    font-size: 40px;                   
+    color: #001e4d;                  
+    font-weight: 600;
+    border-bottom: 3px solid #333;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling for the quiz section */
+.quiz{
+    padding-top: 20px;
+}
+
+/* Styling for the quiz question heading */
+.quiz h2{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 20px;  
+}
+
+/* Styling for answer buttons in the quiz */
+.btn{
+    background-color: #e2e2e2;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+    border: 3px solid #222;
+    padding: 10px;
+    margin: 1px 1px 15px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Styling for answer button hover effect */
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Styling for a disabled answer button */
+.btn:disabled{
+    cursor: no-drop;     /*Not allowing to select answers after the answer is selected*/
+}
+
+/* Styling for the "Next" button in the quiz */
+#nextbutton{
+    background: #001e4d;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    width: 140px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Styling for "Next" button hover effect */
+#nextbutton:hover{
+    cursor: pointer;
+    background : white;
+    color: black;
+    border: 1px solid #001e4d;
+}
+
+/* Styling for an "correct" answer */
+.correct{
+    background: lightgreen;
+}
+
+/* Styling for an "incorrect" answer */
+.incorrect{
+    background: lightcoral;
+}
+
+
+/* Applying fadeOut animation to the quiz */
+.quiz {
+    animation: fadeOut 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+

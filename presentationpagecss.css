@@ -1,0 +1,136 @@
+* {
+  font-family: 'Lexend';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#splash-screen {
+  width: 500px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#splash-text {
+  font-size: 150px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 13px;
+  margin-left: 25px;
+}
+
+#view-sri-lanka {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.student1 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #b9b8b8;
+  margin-right: 30px;
+  margin-left: 0px;
+  font-weight: 400;
+}
+
+.student2{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #b9b8b8;
+  margin-right: 30px;
+  font-weight: 400;
+}
+
+.student3{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #b9b8b8;
+  font-weight: 400;
+}
+
+#grid {
+  display: grid;
+  grid-template-areas: a;
+}
+
+.center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  margin-top: 30px;
+}
+
+.ring {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: ring 0.5s linear infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #ffffff;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #ffffff;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #ffffff;
+  }
+}
+
+.ring:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+span {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  animation: text 1s ease-in-out infinite;
+  font-weight: 600;
+}
+
+@keyframes text {
+  50% {
+    color: black;
+  }
+}
+
